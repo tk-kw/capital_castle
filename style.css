@@ -1,0 +1,247 @@
+body{
+  width: 100%;
+  font-family: Avenir, sans-serif;
+  margin: 0;
+  color: #454545;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  text-align:center;
+  line-height: 18px;
+}
+
+h3 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0; 
+}
+
+hr {
+  height: 4px;
+  background-color: #454545;
+  width: 36px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* header */
+header {
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  border-bottom-left-radius:80% 50%;
+}
+
+/* メニュー */
+
+.menu {
+  display: flex;
+  margin: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+nav {
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 12px;
+  display: block;
+  text-decoration: none;
+  color: #454545;
+  text-align: center;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #B4CCE3;
+}
+
+.current a{
+  border-bottom: 3px solid #B4CCE3;
+}
+
+/* サイトタイトル */
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin-top: 50px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+/* セクション画像 */
+.divider {
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* サービス */
+.service_content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto 200px 100px 200px auto ;
+}
+
+.service01 {
+  text-align: center;
+  grid-column: 2/3
+}
+
+.service02 {
+  text-align: center;
+  grid-column: 4/5
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background: #B4CCE3;
+  display: block;
+  width: 120px;
+  line-height: 42px;
+  border-radius: 4px;
+  margin: 20px auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* 開発者 */
+.creater{
+  text-align: center;
+}
+
+.creater h3 {
+  margin-bottom: 10px;
+}
+
+/* フッター */
+footer {
+  background: #DBDBDB;
+  grid-area: footer;
+}
+
+.boxback {
+  background: #DBDBDB;
+  width:100%;
+  height: 150px;
+  position: relative;
+}
+
+.boxfront {
+  background: #fff;
+  width: 100%;
+  height: 150px;
+  border-bottom-left-radius:80% 90%;
+}
+
+.footer_menu {
+  width: 60%;
+  display: flex;
+  margin: 30px auto;
+  position: relative;
+}
+
+.footer_menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.footer_menu li {
+  margin-left: 20px;
+}
+
+.footer_menu a {
+  color: #454545;
+  text-decoration: none;
+  line-height: 34px;
+}
+
+.footerlist01 ul {
+  margin: 0;
+}
+
+small {
+  display: block;
+  color: #454545;
+  background: #DBDBDB;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .concept{
+    margin: 80px auto;
+    padding: 0 80px;
+  }
+
+  .service_content {
+    grid-template-columns: auto 500px auto ;
+    grid-template-rows: 1fr 100px 1fr;
+  }
+  
+  .service01 {
+    text-align: center;
+    grid-column: 2/3;
+  }
+  
+  .service02 {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .creater {
+    margin: 80px auto;
+    padding: 0 170px;
+  }
+}
