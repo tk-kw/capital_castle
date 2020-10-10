@@ -64,7 +64,7 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -202,6 +202,79 @@ small {
   padding-bottom: 10px;
 }
 
+/* モバイルメニュー  */
+.hmg-menu {
+  display: none;
+}
+
+.hmg-menu #open.hide {
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 64px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .6s;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s, transform .6s;
+}
+
+.overlay a{
+  text-decoration: none;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .3s
+}
+
+.overlay.show li:nth-child(4) {
+  transition-delay: .4s
+}
+
 @media screen and ( max-width: 480px) {
   h1 {
     font-size: 20px;
@@ -239,5 +312,15 @@ small {
   .creater {
     margin: 80px auto;
     padding: 0 18px;
+  }
+
+  .pc-menu {
+    display: none;
+  }
+
+  .hmg-menu {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
   }
 }
