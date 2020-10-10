@@ -4,13 +4,16 @@
     <meta http-equiv="content-type" chraset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Castle</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <div class="menu">  
           <img src="img/CClogo.png" width="32" height="32">
-        <nav>
+        
+          <nav class="pc-menu">
           <ul>
             <li class="current"><a href="#">HOME</a></li>
             <li><a href="https://www.etsy.com/shop/CapitalCastle?ref=simple-shop-header-name&listing_id=829397714">SERVICE</a></li>
@@ -18,7 +21,22 @@
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
+
+        <div class="hmg-menu">
+          <span class="material-icons" id="open">menu</span>
+        </div>
+
       </div>
+
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
+          <ul>
+            <li><a href="https://www.etsy.com/shop/CapitalCastle?ref=simple-shop-header-name&listing_id=829397714">SERVICE</a></li>
+            <li><a href="https://www.craft-beer-canvas.com">DEVELOP</a></li>
+            <li><a href="https://twitter.com/CraftBeerCanvas">TWITTER</a></li>
+          </ul> 
+      </div>
+
           <h1 class="title">Capital Castle</h1>
           <hr>
           <p>bridge between crafts & the world</p>
@@ -65,17 +83,18 @@
       <hr>
       <p>email: miyakocastle@gmail.com</p>
     </section>
+    <footer>
+      <div class="boxback">
+        <div class="boxfront"></div>
+      </div>
+      <div class="footer_menu">
+        <a href="#"><img src="img/CClogo.png" width="32" height="32"></a>
+        <ul>
+          <li><a href="https://twitter.com/CraftBeerCanvas"><img src="img/twitter.png" width="18"></a></li>
+        </ul>
+      </div>
+      <small>Copyright &copy; Capital Castle</small>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
-  <footer>
-    <div class="boxback">
-      <div class="boxfront"></div>
-    </div>
-    <div class="footer_menu">
-      <a href="#"><img src="img/CClogo.png" width="32" height="32"></a>
-      <ul>
-        <li><a href="https://twitter.com/CraftBeerCanvas"><img src="img/twitter.png" width="18"></a></li>
-      </ul>
-    </div>
-    <small>Copyright &copy; Capital Castle</small>
-  </footer>
 </html>
